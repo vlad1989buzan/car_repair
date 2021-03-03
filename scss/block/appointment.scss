@@ -1,0 +1,121 @@
+.appointment {
+    background: url(../img/appointment/Gears.png) top right no-repeat,
+    url(../img/appointment/Gears2.png) 0% calc(100% - 80px) no-repeat
+    ;
+    background-color: $bgcolor2;
+    padding: $wm;
+    padding-top: 130px;
+    padding-bottom: 14.5833%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.appointment-form {
+    flex-basis: 585px;
+    flex-shrink: 1;
+    background: $bgcolor;
+    padding: 76px 56px;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    h3 {
+        text-align: center;
+        margin-bottom: 43px;
+        flex-basis: 100%;
+    }
+    input {
+        display: inline-flex;
+        background: $gr2;
+        color: $gr3;
+        border: none;
+        outline: none;
+        flex-basis: calc((100% - 22px) / 2);
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 22px;
+        /* or 150% */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.15px;
+        padding: 8px 20px;
+    }
+    textarea {
+        flex-basis: 100%;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        /* or 150% */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.15px;
+        padding: 8px 20px;
+        background: $gr2;
+        color: $gr3;
+    }
+    .appointment-button {
+        display: block;
+        @include button;
+        color: $bgcolor;
+        margin-left: auto;
+        margin-bottom: 0;
+    }
+}
+.appointment-info {
+    flex-basis: 326px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h4 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 46px;
+    }
+    span {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 96px;
+        color: #c40b0b;
+        text-align: center;
+    }
+    h6 {
+        margin-top: 46px;
+        color: $fcolor;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1280px) {
+    .appointment {
+        flex-direction: column;
+    }
+}
+@media (max-width: 800px) {
+    .appointment-form {
+        input {
+            flex-basis: 100%;
+        }
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 480px){
+    .appointment-form{
+        padding: 15px 5px;
+    }
+}

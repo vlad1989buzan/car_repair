@@ -1,0 +1,65 @@
+@import "_normalize.scss";
+@import "_variables";
+@import "_mixins";
+
+
+@import "block/header.scss";
+@import "block/about.scss";
+@import "block/promise.scss";
+@import "block/video.scss";
+@import "block/services.scss";
+@import "block/appointment.scss";
+@import "block/gallery.scss";
+@import "block/customers.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+    color: $fcolor;
+    background-color: $gr2;
+}
+
+.wrapper{
+    margin: $wm;
+  
+}
+
+a{
+    text-decoration: none;
+    color: $fcolor;
+}
+h6{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 19px;
+line-height: 26px;
+color: $bgcolor2;
+}
+
+
+h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    
+    
+    color: $bgcolor2;
+}

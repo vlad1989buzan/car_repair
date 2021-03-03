@@ -1,0 +1,218 @@
+header {
+    display: flex;
+
+    max-height: 100vh;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url(../img/header/9d82128d16e7ed2fbeb2c8c3a82e6ffc.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        z-index: -1;
+    }
+}
+.header-container.wrapper {
+    margin-top: 26px;
+    width: 100%;
+}
+.header-container-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+.header-container-top__logo {
+    display: flex;
+    align-items: center;
+    img:first-of-type {
+        margin-right: 10.65px;
+    }
+}
+.header-container-top__info {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 610px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+}
+.header-container-top__info-services {
+    display: flex;
+    min-width: 206px;
+    @include img-size;
+}
+.header-container-top__info-phone {
+    display: flex;
+    @include img-size;
+}
+
+.header-container-top__info-action {
+    @include button;
+}
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: $bgcolor;
+    color: $fcolor2;
+    padding: 14.5px 40px;
+}
+.header-bottom-nav {
+    display: flex;
+    
+    .fa {
+        font-size: 20px;
+    }
+
+    a {
+        color: $fcolor2;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    a:nth-of-type(n + 1) {
+        margin-right: $m;
+    }
+    a.icon{
+        display: none;
+        
+    }
+}
+.header-bottom-actions {
+    display: flex;
+    align-items: center;
+    form{
+        height: 24px;
+        display: flex;
+        align-items: center;
+        margin-right: 22px;
+        input{
+            display: none;
+        }
+        button{
+            width: 24px;
+            height: 24px;
+            background:url(../img/header/search_24px.svg) no-repeat ;
+            background-position: center center;
+            border: none;
+            outline: none;
+            
+            
+        }
+    }
+       
+    a {
+        margin-right: 8px;
+        position: relative;
+        height: 20px;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+        span {
+            width: 16px;
+            height: 16px;
+            background-color: #c40b0b;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+    }
+}
+.header-info {
+    margin-top: 126px;
+    margin-bottom: 312px;
+    max-width: 583px;
+    p {
+        font-weight: 900;
+        font-size: 56px;
+        line-height: 56px;
+    }
+}
+.header-info__action {
+    @include button;
+    
+    margin-top: 48px;
+}
+
+@media (max-width: 1150px) {
+    .header-container-top__logo {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-bottom: 26px;
+    }
+    .header-container-top__info {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 860px) {
+    #myTopnav > a:nth-child(n + 3) {
+        display: none;
+    }
+}
+@media screen and (max-width: 860px) {
+    .header-bottom-nav.responsive a {
+        display: flex !important;
+    }
+    a.icon{
+        display: flex !important;
+        margin-right: 10px !important;
+        
+    }
+    .header-bottom-nav.responsive {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 780px){
+    .header-container-top__info-phone{
+       flex-basis: 50%;
+       flex-shrink: 1;
+      justify-content: flex-end;
+    }
+    .header-container-top__info-action{
+        margin: 26px auto 0;
+    }
+    .header-info {
+        margin-top: 76px;}
+}
+@media screen and (max-width: 600px){
+    .header-container-top__info-phone{
+       flex-basis: auto;
+    }
+    .header-info {
+        margin-top: 56px;}
+}
+@media screen and (max-width: 400px){
+    .header-bottom{
+        padding: 14.5px 15px;
+    }
+    .header-info {
+      
+        p {
+            font-weight: 900;
+            font-size: 28px;
+            line-height: 28px;
+        }
+    }
+}

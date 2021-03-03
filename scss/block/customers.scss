@@ -1,0 +1,74 @@
+.customers{
+    color: $gr1;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 210px;
+    h3 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: #02133c;
+        margin-top: 33px;
+        margin-bottom: 68px;
+    }
+    p {
+        display: flex;
+      
+        line-height: 150%;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+letter-spacing: 0.15px;
+    }
+    .customers-item-tittle {
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 200%;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+    
+        img:last-of-type {
+            position: relative;
+            left: -15px;
+        }
+    }
+    .customers-item{
+        flex-basis: calc((100% - 48px)/3);
+    }
+    .customers-item:nth-of-type(n+2){
+        padding: 50px 43px;
+        background-color: $bgcolor;
+        display: flex;
+        flex-direction: column;
+        p{
+            margin-bottom: 40px;
+        }
+    }
+    .customers-item__element{
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        img{
+            margin-right: 17px;
+        }
+        span{
+            font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.15px;
+
+/* /Car Repair/Secondary */
+
+color: $bgcolor2;
+        }
+    }
+}

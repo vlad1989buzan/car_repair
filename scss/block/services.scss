@@ -1,0 +1,107 @@
+.services.wrapper{
+    margin-top: 120px;
+    color: $gr1;
+    padding-bottom: 122px;
+    position: relative;
+    .services-background{
+       position: absolute;
+       z-index: -1;
+       left: -20.5866%;
+       top: -120px;
+    }
+    .services-background2{
+       position: absolute;
+       z-index: -1;
+       right:  -20.5866%;
+       bottom: 0;
+       transform: rotate(180deg);
+    }
+  
+    h3 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: #02133c;
+        margin-top: 33px;
+        margin-bottom: 68px;
+    }
+    p {
+        display: flex;
+        margin-top: 20px;
+        line-height: 150%;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+letter-spacing: 0.15px;
+    }
+}
+.services-tittle {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 200%;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+    img:last-of-type {
+        position: relative;
+        left: -15px;
+    }
+}
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.services-container-item{
+    flex-basis: calc((100% - 48px)/3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 43px;
+    background-color: $bgcolor;
+    margin-bottom: 24px;
+    transition-duration: 0.3s;
+    h6{
+        margin-top: 33px;
+    }
+}
+.services-container-item:hover{
+   box-shadow: (0px 8px 16px rgba(38, 38, 38, 0.24)),
+(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+
+.services-button{
+@include button;
+width: 145px;
+background: linear-gradient(290deg,  #E30B0B 30%,#C40B0B 30%);
+margin-left: auto;
+margin-right: auto;
+
+}
+
+@media (max-width:1024px){
+    .services-container{
+        justify-content: space-around;
+    }
+    .services-container-item{
+        flex-basis: calc((100% - 48px)/2);
+
+    }
+}
+@media (max-width:640px){
+    .services-container{
+        justify-content: space-around;
+    }
+    .services-container-item{
+        flex-basis: 100%;
+
+    }
+}
