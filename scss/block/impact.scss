@@ -1,0 +1,81 @@
+.impact {
+    background-color: $bgcolor2;
+
+    h3 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: $fcolor;
+        margin-top: 33px;
+    }
+    .impact-tittle {
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 200%;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        color: $gr3;
+
+        img:last-of-type {
+            position: relative;
+            left: -15px;
+        }
+    }
+    .impact-container1 {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -80px;
+        margin-bottom: 79px;
+    }
+    .impact-container1-item1 {
+        flex-basis: 40.7%;
+        margin-top: auto;
+    }
+    .impact-container1-item2 {
+        flex-basis: 48.82%;
+        background: url(../img/impact/Image.png) bottom center no-repeat;
+        min-height: 315px;
+    }
+    .impact-container2 {
+        display: flex;
+        justify-content: space-between;
+
+        .impact-container2-item {
+            flex-basis: calc((100% - 72px) / 4);
+            display: flex;
+            .impact-container2-item__info {
+                h3 {
+                    margin-top: 0;
+                    color: #c40b0b;
+                }
+            }
+            img {
+                margin-right: 11px;
+            }
+        }
+    }
+    .impact-container3 {
+        background-color: $bgcolor;
+        margin-top: 59px;
+        padding: 43px 70px 48px;
+        display: flex;
+        transform: translateY(50%);
+        h5 {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 30px;
+
+            color: $bgcolor2;
+        }
+        .impact-container3-button {
+            @include button;
+            margin-left: 101px;
+        }
+    }
+}
