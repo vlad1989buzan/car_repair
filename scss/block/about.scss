@@ -56,3 +56,9 @@ letter-spacing: 0.15px;
     }
     
 }
+
+@media (max-width:640px){
+    .about{
+        top: -50px;
+    }
+}

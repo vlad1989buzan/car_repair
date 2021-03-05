@@ -72,3 +72,22 @@ color: $bgcolor2;
         }
     }
 }
+
+@media(max-width:1024px){
+    .customers{
+        flex-wrap: wrap;
+    }
+    .customers-item:first-of-type{
+        flex-basis: 100%;
+    }
+    .customers-item:nth-of-type(n+2){
+        flex-basis: calc((100% - 24px)/2);
+    }
+}
+@media(max-width:640px){
+    
+    .customers-item:nth-of-type(n+2){
+        flex-basis: 100%;
+        margin-bottom: 24px;
+    }
+}
